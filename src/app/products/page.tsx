@@ -1,3 +1,12 @@
+import Link from "next/link";
+
 export default function ProductList() {
-    return <div>Product List Page</div>;
+    const productId = 100;
+    return (
+        <>
+        <h1>Product List</h1>
+        <Link href="/">Home</Link>
+        <Link href={`/products/${productId}`}>Product {productId}</Link>
+        </>
+    )
 }
